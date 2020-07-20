@@ -6,43 +6,44 @@ Ciclo de vida de los componentes en JS .
 import { Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy } from '@angular/core';
 
 @Component({
-  selector: 'app-fases',
-  templateUrl: './fases.component.html',
+  selector: 'app-ciclos-de-vida',
+  template: `
+    <p>
+      Hello world!
+    </p>
+
+  `,
+  styles: []
 })
 
-export class fasesComponent implements OnInit ,OnChanges,DoCheck,AfterContentInit,AfterContentChecked,AfterViewInit,AfterViewChecked,OnDestroy{
+export class CiclosDeVidaComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
 
   constructor() { }
 
   ngOnInit() {
     console.log('ngOnInit');
   }
-  ngOnChanges(){
+  ngOnChanges() {
     console.log('ngOnChanges');
   }
-  ngDoCheck(){
+  ngDoCheck() {
     console.log('ngDoCheck');
-    
   }
-  ngAfterContentInit(){
+  ngAfterContentInit() {
     console.log('ngAfterContentInit');
-    
   }
-  ngAfterContentChecked(){
+  ngAfterContentChecked() {
     console.log('ngAfterContentChecked');
-    
   }
-  ngAfterViewInit(){
+  ngAfterViewInit() {
     console.log('ngAfterViewInit');
-    
   }
-  ngAfterViewChecked(){
+  ngAfterViewChecked() {
     console.log('ngAfterViewChecked');
-    
   }
-  ngOnDestroy(){
+  ngOnDestroy() {
     console.log('ngOnDestroy');
-    
   }
 }
+
 ````

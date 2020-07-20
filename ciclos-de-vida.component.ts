@@ -6,7 +6,6 @@ import { Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentCh
     <p>
       Hello world!
     </p>
-
   `,
   styles: []
 })
